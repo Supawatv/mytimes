@@ -1,0 +1,87 @@
+/* Header */
+header {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: solid black 1px;
+}
+
+header > * {
+	display: inline-block;
+	flex-grow: 1;
+}
+
+header .logo {
+	margin-left: 30px;
+	display: flex;
+	color: mediumaquamarine;
+	align-items: center;
+}
+
+header .logo img {
+	margin: 0 12px 0 0;
+}
+
+header nav {
+	margin-right: 30px;
+	text-align: right;
+}
+
+header nav a{
+	margin: auto 20px;
+	color:  black;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+/* Articles */
+.articles{
+	display: flex;
+	position: relative;
+	top: 80px;
+	width: 1232px
+}
+
+.articles > *{
+	display: flex;
+	flex-flow: column wrap;
+	border: solid black 3px;
+}
+
+.articles > * > *{
+	display: flex;
+	flex-flow: column wrap;
+	border: solid grey 1px;
+}
+
+.articles > * > * > *{
+	display: block;
+	flex-flow: column wrap;
+	border: solid grey 1px;
+}
+
+
+.left{
+	padding-right: 30px;
+	background-color: lightblue;
+}
+
+/* Columns */
+/* If I sepcifiy width here it works */
+.left > *{
+}
+
+.middle{
+	background-color: lightgoldenrodyellow;
+}
+
+.right{
+	background-color: lightgreen;
+}
