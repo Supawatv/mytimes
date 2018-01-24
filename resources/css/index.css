@@ -13,6 +13,12 @@ header {
 	border-bottom: solid black 1px;
 }
 
+header{
+	background-color: white;
+	z-index: 1;
+}
+
+
 header > * {
 	display: inline-block;
 	flex-grow: 1;
@@ -41,47 +47,56 @@ header nav a{
 	text-decoration-style: solid;
 }
 
-/* Articles */
-.articles{
-	display: flex;
+
+.container{
 	position: relative;
-	top: 80px;
-	width: 1232px
-}
-
-.articles > *{
+	top: 60px;
+	background-color: grey;
+	border: solid black 5px;
 	display: flex;
-	flex-flow: column wrap;
-	border: solid black 3px;
+	justify-content: center;
+	z-index: 0;
+	
 }
 
-.articles > * > *{
+.container > *{
+	margin: 32px 16px 0px 16px; 
+}
+
+.container .left{
+	width: 630px;
+	border: solid black 2px;
+	background-color: red;
+}
+
+.container .middle{
+	width: 300px;
+	border: solid black 2px;
+	background-color: green;
+}
+
+
+.container .right{
+	width: 240px;
+	border: solid black 2px;
+	background-color: blue;
+}
+
+
+article{
 	display: flex;
-	flex-flow: column wrap;
-	border: solid grey 1px;
+	flex-flow: column;
+	border: solid black 1px;
 }
 
-.articles > * > * > *{
-	display: block;
-	flex-flow: column wrap;
-	border: solid grey 1px;
+article > *{
+	border:  dashed black 1px;
 }
 
 
-.left{
-	padding-right: 30px;
-	background-color: lightblue;
-}
 
-/* Columns */
-/* If I sepcifiy width here it works */
-.left > *{
-}
 
-.middle{
-	background-color: lightgoldenrodyellow;
-}
 
-.right{
-	background-color: lightgreen;
-}
+
+
+
