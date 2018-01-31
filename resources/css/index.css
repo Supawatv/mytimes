@@ -1,20 +1,19 @@
+body{
+	margin: 0;
+}
+
 /* Header */
 header {
 	display: flex;
 	width: 100%;
 	height: 80px;
 	background-color: white;
-	justify-content: center;
 	align-items: center;
 	position: fixed;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
 	border-bottom: solid black 1px;
-}
-
-header{
-	background-color: white;
 	z-index: 1;
 }
 
@@ -48,10 +47,13 @@ header nav a{
 }
 
 
+
+
+/* Container */
 .container{
 	position: relative;
 	top: 60px;
-	background-color: grey;
+	background-color: white;
 	border: solid black 5px;
 	display: flex;
 	justify-content: center;
@@ -66,20 +68,20 @@ header nav a{
 .container .left{
 	width: 630px;
 	border: solid black 2px;
-	background-color: red;
+	background-color: white;
 }
 
 .container .middle{
 	width: 300px;
 	border: solid black 2px;
-	background-color: green;
+	background-color: white;
 }
 
 
 .container .right{
 	width: 240px;
 	border: solid black 2px;
-	background-color: blue;
+	background-color: white;
 }
 
 
@@ -92,6 +94,59 @@ article{
 article > *{
 	border:  dashed black 1px;
 }
+
+
+/* Stories */
+.stories{
+	display: flex;
+}
+
+.stories article{
+	flex: 0 1 auto;}
+
+
+
+
+
+
+/* Typography */
+p{
+	font-family: Georgia;
+	font-size: 17px;
+	color: black;
+}
+
+.image p{
+	position: relative;
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+}
+
+
+/* Images */
+#main{
+	height: 300px;
+	background-image: url(../assets/img-story-main.png);
+}
+#EarthSpin{
+	height: 300px;
+	background-image: url(../assets/img-story-2.png);
+}
+#Camera{
+	height: 300px;
+	background-image: url(../assets/img-story-3.png);
+}
+#Cat{
+	height: 300px;
+	background-image: url(../assets/img-story-1.png);
+}
+#main p{
+	font-size: 40px;
+}
+
+
 
 
 
