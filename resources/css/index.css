@@ -1,4 +1,4 @@
-body{
+body {
 	margin: 0;
 }
 
@@ -16,7 +16,6 @@ header {
 	border-bottom: solid black 1px;
 	z-index: 1;
 }
-
 
 header > * {
 	display: inline-block;
@@ -39,18 +38,15 @@ header nav {
 	text-align: right;
 }
 
-header nav a{
+header nav a {
 	margin: auto 20px;
-	color:  black;
+	color: black;
 	text-decoration-line: underline;
 	text-decoration-style: solid;
 }
 
-
-
-
 /* Container */
-.container{
+.container {
 	position: relative;
 	top: 60px;
 	background-color: white;
@@ -58,65 +54,57 @@ header nav a{
 	display: flex;
 	justify-content: center;
 	z-index: 0;
-	
 }
 
-.container > *{
-	margin: 32px 16px 0px 16px; 
+.container > * {
+	margin: 32px 16px 0px 16px;
 }
 
-.container .left{
+.container .left {
 	width: 630px;
 	border: solid black 2px;
 	background-color: white;
 }
 
-.container .middle{
+.container .middle {
 	width: 300px;
 	border: solid black 2px;
 	background-color: white;
 }
 
-
-.container .right{
+.container .right {
 	width: 240px;
 	border: solid black 2px;
 	background-color: white;
 }
 
-
-article{
+article {
 	display: flex;
 	flex-flow: column;
 	border: solid black 1px;
 }
 
-article > *{
-	border:  dashed black 1px;
+article > * {
+	border: dashed black 1px;
 }
 
-
 /* Stories */
-.stories{
+.stories {
 	display: flex;
 }
 
-.stories article{
-	flex: 0 1 auto;}
-
-
-
-
-
+.stories article {
+	flex: 0 1 auto;
+}
 
 /* Typography */
-p{
+p {
 	font-family: Georgia;
 	font-size: 17px;
 	color: black;
 }
 
-.image p{
+.image p {
 	position: relative;
 	font-family: Georgia;
 	font-weight: bold;
@@ -124,34 +112,97 @@ p{
 	color: white;
 }
 
-
 /* Images */
-#main{
+#main {
 	height: 300px;
 	background-image: url(../assets/img-story-main.png);
 }
-#EarthSpin{
+
+#EarthSpin {
 	height: 300px;
 	background-image: url(../assets/img-story-2.png);
 }
-#Camera{
+
+#Camera {
 	height: 300px;
 	background-image: url(../assets/img-story-3.png);
 }
-#Cat{
+
+#Cat {
 	height: 300px;
 	background-image: url(../assets/img-story-1.png);
 }
-#main p{
+
+#main p {
 	font-size: 40px;
 }
 
+/* Bites */
+.bites {
+	display: flex;
+	flex-flow: column;
+}
+
+.bites h1 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px 0px 8px 0px;
+}
+
+/* Objects */
+.bite {
+	padding: 8px 0px 8px 0px;
+	border: solid grey 1px;
+	background-color: WhiteSmoke;
+	font-family: Verdana;
+	font-size: 12px;
+	color: DimGray;
+}
+
+/* Footer */
+footer {
+	position:;
+	display: flex;
+	flex-flow: column;
+	border: solid 2px grey;
+	justify-content: center;
+	width: 100%;
+	height: 325px;
+	background-color: MediumAquamarine;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+/* Footer Flexbox Top */
+footer .info {
+	display: flex;
+	flex-flow: row;
+	border: solid 2px grey;
+	justify-content: center;
+	padding: 20px 0px 20px 0px;
+}
+
+footer nav span{
+	padding: 20px 20px 20px 20px;
+}
+
+footer nav span a{
+	color: black;
+}
 
 
+footer .copyright {
+	display: flex;
+	flex-flow: row;
+	border: solid 2px grey;
+	justify-content: center;
+}
 
-
-
-
-
-
-
+footer .title {
+	font-family: Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
